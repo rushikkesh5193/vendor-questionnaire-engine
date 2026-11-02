@@ -1,0 +1,295 @@
+{
+  "_note": "The question set is original and SIG/CAIQ-style in structure only. It is not the SIG or the CAIQ. Weights, bands and rules are illustrative defaults.",
+  "domains": {
+    "GOV": "Governance",
+    "ACC": "Access control",
+    "DAT": "Data protection",
+    "INC": "Incident response",
+    "BCP": "Resilience",
+    "VUL": "Vulnerability management",
+    "SDL": "Secure development",
+    "SUB": "Fourth parties"
+  },
+  "questions": [
+    {
+      "id": "GOV-1",
+      "domain": "GOV",
+      "text": "Do you maintain an approved information security policy that is reviewed at least annually?",
+      "weight": 3,
+      "critical": false,
+      "evidence": "policy_infosec"
+    },
+    {
+      "id": "GOV-2",
+      "domain": "GOV",
+      "text": "Are you certified to ISO/IEC 27001 with a current certificate that covers the service we use?",
+      "weight": 3,
+      "critical": false,
+      "evidence": "iso27001_cert"
+    },
+    {
+      "id": "GOV-3",
+      "domain": "GOV",
+      "text": "Do you hold an independent SOC 2 Type 2 report that covers the service we use?",
+      "weight": 2,
+      "critical": false,
+      "evidence": "soc2_report"
+    },
+    {
+      "id": "GOV-4",
+      "domain": "GOV",
+      "text": "Do all staff complete security awareness training at least annually?",
+      "weight": 1,
+      "critical": false
+    },
+    {
+      "id": "ACC-1",
+      "domain": "ACC",
+      "text": "Is multi-factor authentication required for all remote access to systems that hold our data?",
+      "weight": 3,
+      "critical": false
+    },
+    {
+      "id": "ACC-2",
+      "domain": "ACC",
+      "text": "Is access to our data role-based, least-privilege and reviewed at least quarterly?",
+      "weight": 2,
+      "critical": false
+    },
+    {
+      "id": "ACC-3",
+      "domain": "ACC",
+      "text": "Is multi-factor authentication enforced for all privileged and administrator accounts?",
+      "weight": 3,
+      "critical": true
+    },
+    {
+      "id": "ACC-4",
+      "domain": "ACC",
+      "text": "Is access removed within one working day when staff leave or change role?",
+      "weight": 2,
+      "critical": false
+    },
+    {
+      "id": "DAT-1",
+      "domain": "DAT",
+      "text": "Is our data encrypted at rest?",
+      "weight": 3,
+      "critical": true
+    },
+    {
+      "id": "DAT-2",
+      "domain": "DAT",
+      "text": "Is our data encrypted in transit using current TLS versions?",
+      "weight": 3,
+      "critical": false
+    },
+    {
+      "id": "DAT-3",
+      "domain": "DAT",
+      "text": "Are encryption keys managed in a dedicated key management service with restricted access?",
+      "weight": 2,
+      "critical": false
+    },
+    {
+      "id": "DAT-4",
+      "domain": "DAT",
+      "text": "Is our data logically separated from other customers' data?",
+      "weight": 2,
+      "critical": false
+    },
+    {
+      "id": "INC-1",
+      "domain": "INC",
+      "text": "Do you have a documented incident response plan?",
+      "weight": 3,
+      "critical": true,
+      "evidence": "ir_plan"
+    },
+    {
+      "id": "INC-2",
+      "domain": "INC",
+      "text": "Is the incident response plan tested at least annually?",
+      "weight": 2,
+      "critical": false
+    },
+    {
+      "id": "INC-3",
+      "domain": "INC",
+      "text": "Will you notify us of a security incident affecting our data within 72 hours, or the contractual period if shorter?",
+      "weight": 3,
+      "critical": false
+    },
+    {
+      "id": "INC-4",
+      "domain": "INC",
+      "text": "Do you keep security logs for at least 12 months?",
+      "weight": 1,
+      "critical": false
+    },
+    {
+      "id": "BCP-1",
+      "domain": "BCP",
+      "text": "Do you have a documented business continuity and disaster recovery plan?",
+      "weight": 2,
+      "critical": false,
+      "evidence": "bcp_plan"
+    },
+    {
+      "id": "BCP-2",
+      "domain": "BCP",
+      "text": "Is disaster recovery tested at least annually, with recorded results?",
+      "weight": 3,
+      "critical": false,
+      "evidence": "bcp_test_report"
+    },
+    {
+      "id": "BCP-3",
+      "domain": "BCP",
+      "text": "Are backups taken regularly and restore-tested at least annually?",
+      "weight": 2,
+      "critical": false
+    },
+    {
+      "id": "BCP-4",
+      "domain": "BCP",
+      "text": "Are recovery time and recovery point objectives defined for our service?",
+      "weight": 1,
+      "critical": false
+    },
+    {
+      "id": "VUL-1",
+      "domain": "VUL",
+      "text": "Do you scan your systems for vulnerabilities at least monthly?",
+      "weight": 2,
+      "critical": false
+    },
+    {
+      "id": "VUL-2",
+      "domain": "VUL",
+      "text": "Are critical vulnerabilities patched within 30 days?",
+      "weight": 3,
+      "critical": false
+    },
+    {
+      "id": "VUL-3",
+      "domain": "VUL",
+      "text": "Is an independent penetration test performed at least annually?",
+      "weight": 2,
+      "critical": false,
+      "evidence": "pentest_report"
+    },
+    {
+      "id": "VUL-4",
+      "domain": "VUL",
+      "text": "Is endpoint protection deployed and current on all devices that can access our data?",
+      "weight": 1,
+      "critical": false
+    },
+    {
+      "id": "SDL-1",
+      "domain": "SDL",
+      "text": "Do you follow a secure software development lifecycle that includes code review?",
+      "weight": 2,
+      "critical": false
+    },
+    {
+      "id": "SDL-2",
+      "domain": "SDL",
+      "text": "Do you scan code and dependencies for vulnerabilities before release?",
+      "weight": 2,
+      "critical": false
+    },
+    {
+      "id": "SDL-3",
+      "domain": "SDL",
+      "text": "Are production and test environments separated, with no live customer data in test?",
+      "weight": 2,
+      "critical": false
+    },
+    {
+      "id": "SDL-4",
+      "domain": "SDL",
+      "text": "Are changes to production approved and tracked?",
+      "weight": 1,
+      "critical": false
+    },
+    {
+      "id": "SUB-1",
+      "domain": "SUB",
+      "text": "Do you maintain a current list of the subprocessors and other third parties that touch our data?",
+      "weight": 2,
+      "critical": false,
+      "evidence": "subprocessor_list"
+    },
+    {
+      "id": "SUB-2",
+      "domain": "SUB",
+      "text": "Do you flow down security and confidentiality obligations to those third parties?",
+      "weight": 2,
+      "critical": false
+    },
+    {
+      "id": "SUB-3",
+      "domain": "SUB",
+      "text": "Do you assess the security of those third parties at least annually?",
+      "weight": 2,
+      "critical": false
+    },
+    {
+      "id": "SUB-4",
+      "domain": "SUB",
+      "text": "Will you tell us before you add or change a subprocessor that handles our data?",
+      "weight": 1,
+      "critical": false
+    }
+  ],
+  "answer_credit": {
+    "yes": 1.0,
+    "partial": 0.5,
+    "no": 0.0
+  },
+  "unsupported_yes_credit": 0.5,
+  "min_answered_weight_pct": 80,
+  "bands": {
+    "low_risk_min": 80,
+    "medium_risk_min": 60
+  },
+  "consistency": [
+    {
+      "claim": "ACC-1",
+      "contradicted_by": "ACC-3",
+      "why": "claims MFA for all remote access but no MFA for privileged accounts"
+    },
+    {
+      "claim": "INC-2",
+      "contradicted_by": "INC-1",
+      "why": "claims the incident response plan is tested but says no plan exists"
+    },
+    {
+      "claim": "BCP-2",
+      "contradicted_by": "BCP-1",
+      "why": "claims DR is tested but says no DR plan exists"
+    },
+    {
+      "claim": "DAT-3",
+      "contradicted_by": "DAT-1",
+      "why": "claims managed encryption keys but says data is not encrypted at rest"
+    },
+    {
+      "claim": "SUB-2",
+      "contradicted_by": "SUB-1",
+      "why": "claims to flow down obligations to third parties but keeps no list of them"
+    },
+    {
+      "claim": "SUB-3",
+      "contradicted_by": "SUB-1",
+      "why": "claims to assess third parties but keeps no list of them"
+    },
+    {
+      "claim": "VUL-2",
+      "contradicted_by": "VUL-1",
+      "why": "claims critical patching but does no vulnerability scanning"
+    }
+  ]
+}

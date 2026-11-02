@@ -1,0 +1,797 @@
+{
+  "as_of": "",
+  "issues": [
+    {
+      "severity": "high",
+      "vendor": "V001",
+      "name": "Vendor 001",
+      "check": "CRITICAL_CONTROL_MISSING",
+      "detail": "ACC-3 answered no: Is multi-factor authentication enforced for all privileged and administrator accounts?",
+      "question": "What is your plan and date to implement ACC-3?"
+    },
+    {
+      "severity": "high",
+      "vendor": "V001",
+      "name": "Vendor 001",
+      "check": "INCONSISTENT_ANSWERS",
+      "detail": "ACC-1 yes but ACC-3 no: claims MFA for all remote access but no MFA for privileged accounts.",
+      "question": "Your answers to ACC-1 and ACC-3 conflict. Please clarify."
+    },
+    {
+      "severity": "high",
+      "vendor": "V002",
+      "name": "Vendor 002",
+      "check": "UNSUPPORTED_YES",
+      "detail": "GOV-2 answered yes but no iso27001_cert is on file.",
+      "question": "You answered yes to GOV-2 (Are you certified to ISO/IEC 27001 with a current certificate that covers the service we use?) Please provide the supporting evidence (iso27001_cert)."
+    },
+    {
+      "severity": "high",
+      "vendor": "V004",
+      "name": "Vendor 004",
+      "check": "CRITICAL_CONTROL_MISSING",
+      "detail": "ACC-3 answered no: Is multi-factor authentication enforced for all privileged and administrator accounts?",
+      "question": "What is your plan and date to implement ACC-3?"
+    },
+    {
+      "severity": "high",
+      "vendor": "V004",
+      "name": "Vendor 004",
+      "check": "CRITICAL_CONTROL_MISSING",
+      "detail": "DAT-1 answered no: Is our data encrypted at rest?",
+      "question": "What is your plan and date to implement DAT-1?"
+    },
+    {
+      "severity": "high",
+      "vendor": "V004",
+      "name": "Vendor 004",
+      "check": "CRITICAL_CONTROL_MISSING",
+      "detail": "INC-1 answered no: Do you have a documented incident response plan?",
+      "question": "What is your plan and date to implement INC-1?"
+    },
+    {
+      "severity": "high",
+      "vendor": "V004",
+      "name": "Vendor 004",
+      "check": "RATING_HIGH",
+      "detail": "Verified score 16.9 is below 60.",
+      "question": "Request a remediation plan before proceeding."
+    },
+    {
+      "severity": "high",
+      "vendor": "V005",
+      "name": "Vendor 005",
+      "check": "INCONSISTENT_ANSWERS",
+      "detail": "SUB-2 yes but SUB-1 no: claims to flow down obligations to third parties but keeps no list of them.",
+      "question": "Your answers to SUB-2 and SUB-1 conflict. Please clarify."
+    },
+    {
+      "severity": "high",
+      "vendor": "V005",
+      "name": "Vendor 005",
+      "check": "INCONSISTENT_ANSWERS",
+      "detail": "SUB-3 yes but SUB-1 no: claims to assess third parties but keeps no list of them.",
+      "question": "Your answers to SUB-3 and SUB-1 conflict. Please clarify."
+    },
+    {
+      "severity": "high",
+      "vendor": "V007",
+      "name": "Vendor 007",
+      "check": "INCONSISTENT_ANSWERS",
+      "detail": "BCP-2 yes but BCP-1 no: claims DR is tested but says no DR plan exists.",
+      "question": "Your answers to BCP-2 and BCP-1 conflict. Please clarify."
+    },
+    {
+      "severity": "high",
+      "vendor": "V008",
+      "name": "Vendor 008",
+      "check": "CRITICAL_CONTROL_MISSING",
+      "detail": "DAT-1 answered no: Is our data encrypted at rest?",
+      "question": "What is your plan and date to implement DAT-1?"
+    },
+    {
+      "severity": "high",
+      "vendor": "V008",
+      "name": "Vendor 008",
+      "check": "INCONSISTENT_ANSWERS",
+      "detail": "DAT-3 yes but DAT-1 no: claims managed encryption keys but says data is not encrypted at rest.",
+      "question": "Your answers to DAT-3 and DAT-1 conflict. Please clarify."
+    },
+    {
+      "severity": "medium",
+      "vendor": "V003",
+      "name": "Vendor 003",
+      "check": "INCOMPLETE",
+      "detail": "Only 50.0% of the questionnaire weight is answered (minimum 80%).",
+      "question": "Please complete the unanswered questions."
+    },
+    {
+      "severity": "medium",
+      "vendor": "V006",
+      "name": "Vendor 006",
+      "check": "UNSUPPORTED_YES",
+      "detail": "VUL-3 answered yes but no pentest_report is on file.",
+      "question": "You answered yes to VUL-3 (Is an independent penetration test performed at least annually?) Please provide the supporting evidence (pentest_report)."
+    }
+  ],
+  "scorecards": [
+    {
+      "vendor": "V001",
+      "name": "Vendor 001",
+      "tier": 2,
+      "claimed_score": 95.6,
+      "verified_score": 95.6,
+      "answered_weight_pct": 100.0,
+      "rating": "medium",
+      "domains": {
+        "GOV": 100.0,
+        "ACC": 70.0,
+        "DAT": 100.0,
+        "INC": 100.0,
+        "BCP": 100.0,
+        "VUL": 100.0,
+        "SDL": 100.0,
+        "SUB": 100.0
+      },
+      "weakest_domains": [
+        "ACC",
+        "BCP",
+        "DAT"
+      ]
+    },
+    {
+      "vendor": "V002",
+      "name": "Vendor 002",
+      "tier": 2,
+      "claimed_score": 100.0,
+      "verified_score": 97.8,
+      "answered_weight_pct": 100.0,
+      "rating": "low",
+      "domains": {
+        "GOV": 83.3,
+        "ACC": 100.0,
+        "DAT": 100.0,
+        "INC": 100.0,
+        "BCP": 100.0,
+        "VUL": 100.0,
+        "SDL": 100.0,
+        "SUB": 100.0
+      },
+      "weakest_domains": [
+        "GOV",
+        "ACC",
+        "BCP"
+      ]
+    },
+    {
+      "vendor": "V003",
+      "name": "Vendor 003",
+      "tier": 2,
+      "claimed_score": null,
+      "verified_score": null,
+      "answered_weight_pct": 50.0,
+      "rating": "unrated",
+      "domains": {
+        "GOV": 100.0,
+        "ACC": 100.0,
+        "DAT": 100.0,
+        "INC": 100.0
+      },
+      "weakest_domains": [
+        "ACC",
+        "DAT",
+        "GOV"
+      ]
+    },
+    {
+      "vendor": "V004",
+      "name": "Vendor 004",
+      "tier": 2,
+      "claimed_score": 16.9,
+      "verified_score": 16.9,
+      "answered_weight_pct": 100.0,
+      "rating": "high",
+      "domains": {
+        "GOV": 50.0,
+        "ACC": 0.0,
+        "DAT": 0.0,
+        "INC": 0.0,
+        "BCP": 0.0,
+        "VUL": 0.0,
+        "SDL": 50.0,
+        "SUB": 50.0
+      },
+      "weakest_domains": [
+        "ACC",
+        "BCP",
+        "DAT"
+      ]
+    },
+    {
+      "vendor": "V005",
+      "name": "Vendor 005",
+      "tier": 2,
+      "claimed_score": 97.1,
+      "verified_score": 97.1,
+      "answered_weight_pct": 100.0,
+      "rating": "low",
+      "domains": {
+        "GOV": 100.0,
+        "ACC": 100.0,
+        "DAT": 100.0,
+        "INC": 100.0,
+        "BCP": 100.0,
+        "VUL": 100.0,
+        "SDL": 100.0,
+        "SUB": 71.4
+      },
+      "weakest_domains": [
+        "SUB",
+        "ACC",
+        "BCP"
+      ]
+    },
+    {
+      "vendor": "V006",
+      "name": "Vendor 006",
+      "tier": 2,
+      "claimed_score": 100.0,
+      "verified_score": 98.5,
+      "answered_weight_pct": 100.0,
+      "rating": "low",
+      "domains": {
+        "GOV": 100.0,
+        "ACC": 100.0,
+        "DAT": 100.0,
+        "INC": 100.0,
+        "BCP": 100.0,
+        "VUL": 87.5,
+        "SDL": 100.0,
+        "SUB": 100.0
+      },
+      "weakest_domains": [
+        "VUL",
+        "ACC",
+        "BCP"
+      ]
+    },
+    {
+      "vendor": "V007",
+      "name": "Vendor 007",
+      "tier": 2,
+      "claimed_score": 97.1,
+      "verified_score": 97.1,
+      "answered_weight_pct": 100.0,
+      "rating": "low",
+      "domains": {
+        "GOV": 100.0,
+        "ACC": 100.0,
+        "DAT": 100.0,
+        "INC": 100.0,
+        "BCP": 75.0,
+        "VUL": 100.0,
+        "SDL": 100.0,
+        "SUB": 100.0
+      },
+      "weakest_domains": [
+        "BCP",
+        "ACC",
+        "DAT"
+      ]
+    },
+    {
+      "vendor": "V008",
+      "name": "Vendor 008",
+      "tier": 2,
+      "claimed_score": 95.6,
+      "verified_score": 95.6,
+      "answered_weight_pct": 100.0,
+      "rating": "medium",
+      "domains": {
+        "GOV": 100.0,
+        "ACC": 100.0,
+        "DAT": 70.0,
+        "INC": 100.0,
+        "BCP": 100.0,
+        "VUL": 100.0,
+        "SDL": 100.0,
+        "SUB": 100.0
+      },
+      "weakest_domains": [
+        "DAT",
+        "ACC",
+        "BCP"
+      ]
+    },
+    {
+      "vendor": "V011",
+      "name": "Vendor 011",
+      "tier": 4,
+      "claimed_score": 100.0,
+      "verified_score": 100.0,
+      "answered_weight_pct": 100.0,
+      "rating": "low",
+      "domains": {
+        "GOV": 100.0,
+        "ACC": 100.0,
+        "DAT": 100.0,
+        "INC": 100.0,
+        "BCP": 100.0,
+        "VUL": 100.0,
+        "SDL": 100.0,
+        "SUB": 100.0
+      },
+      "weakest_domains": [
+        "ACC",
+        "BCP",
+        "DAT"
+      ]
+    },
+    {
+      "vendor": "V012",
+      "name": "Vendor 012",
+      "tier": 1,
+      "claimed_score": 100.0,
+      "verified_score": 100.0,
+      "answered_weight_pct": 100.0,
+      "rating": "low",
+      "domains": {
+        "GOV": 100.0,
+        "ACC": 100.0,
+        "DAT": 100.0,
+        "INC": 100.0,
+        "BCP": 100.0,
+        "VUL": 100.0,
+        "SDL": 100.0,
+        "SUB": 100.0
+      },
+      "weakest_domains": [
+        "ACC",
+        "BCP",
+        "DAT"
+      ]
+    },
+    {
+      "vendor": "V013",
+      "name": "Vendor 013",
+      "tier": 2,
+      "claimed_score": 100.0,
+      "verified_score": 100.0,
+      "answered_weight_pct": 100.0,
+      "rating": "low",
+      "domains": {
+        "GOV": 100.0,
+        "ACC": 100.0,
+        "DAT": 100.0,
+        "INC": 100.0,
+        "BCP": 100.0,
+        "VUL": 100.0,
+        "SDL": 100.0,
+        "SUB": 100.0
+      },
+      "weakest_domains": [
+        "ACC",
+        "BCP",
+        "DAT"
+      ]
+    },
+    {
+      "vendor": "V014",
+      "name": "Vendor 014",
+      "tier": 3,
+      "claimed_score": 100.0,
+      "verified_score": 100.0,
+      "answered_weight_pct": 100.0,
+      "rating": "low",
+      "domains": {
+        "GOV": 100.0,
+        "ACC": 100.0,
+        "DAT": 100.0,
+        "INC": 100.0,
+        "BCP": 100.0,
+        "VUL": 100.0,
+        "SDL": 100.0,
+        "SUB": 100.0
+      },
+      "weakest_domains": [
+        "ACC",
+        "BCP",
+        "DAT"
+      ]
+    },
+    {
+      "vendor": "V015",
+      "name": "Vendor 015",
+      "tier": 4,
+      "claimed_score": 100.0,
+      "verified_score": 100.0,
+      "answered_weight_pct": 100.0,
+      "rating": "low",
+      "domains": {
+        "GOV": 100.0,
+        "ACC": 100.0,
+        "DAT": 100.0,
+        "INC": 100.0,
+        "BCP": 100.0,
+        "VUL": 100.0,
+        "SDL": 100.0,
+        "SUB": 100.0
+      },
+      "weakest_domains": [
+        "ACC",
+        "BCP",
+        "DAT"
+      ]
+    },
+    {
+      "vendor": "V016",
+      "name": "Vendor 016",
+      "tier": 1,
+      "claimed_score": 100.0,
+      "verified_score": 100.0,
+      "answered_weight_pct": 100.0,
+      "rating": "low",
+      "domains": {
+        "GOV": 100.0,
+        "ACC": 100.0,
+        "DAT": 100.0,
+        "INC": 100.0,
+        "BCP": 100.0,
+        "VUL": 100.0,
+        "SDL": 100.0,
+        "SUB": 100.0
+      },
+      "weakest_domains": [
+        "ACC",
+        "BCP",
+        "DAT"
+      ]
+    },
+    {
+      "vendor": "V017",
+      "name": "Vendor 017",
+      "tier": 2,
+      "claimed_score": 100.0,
+      "verified_score": 100.0,
+      "answered_weight_pct": 100.0,
+      "rating": "low",
+      "domains": {
+        "GOV": 100.0,
+        "ACC": 100.0,
+        "DAT": 100.0,
+        "INC": 100.0,
+        "BCP": 100.0,
+        "VUL": 100.0,
+        "SDL": 100.0,
+        "SUB": 100.0
+      },
+      "weakest_domains": [
+        "ACC",
+        "BCP",
+        "DAT"
+      ]
+    },
+    {
+      "vendor": "V018",
+      "name": "Vendor 018",
+      "tier": 3,
+      "claimed_score": 100.0,
+      "verified_score": 100.0,
+      "answered_weight_pct": 100.0,
+      "rating": "low",
+      "domains": {
+        "GOV": 100.0,
+        "ACC": 100.0,
+        "DAT": 100.0,
+        "INC": 100.0,
+        "BCP": 100.0,
+        "VUL": 100.0,
+        "SDL": 100.0,
+        "SUB": 100.0
+      },
+      "weakest_domains": [
+        "ACC",
+        "BCP",
+        "DAT"
+      ]
+    },
+    {
+      "vendor": "V019",
+      "name": "Vendor 019",
+      "tier": 4,
+      "claimed_score": 100.0,
+      "verified_score": 100.0,
+      "answered_weight_pct": 100.0,
+      "rating": "low",
+      "domains": {
+        "GOV": 100.0,
+        "ACC": 100.0,
+        "DAT": 100.0,
+        "INC": 100.0,
+        "BCP": 100.0,
+        "VUL": 100.0,
+        "SDL": 100.0,
+        "SUB": 100.0
+      },
+      "weakest_domains": [
+        "ACC",
+        "BCP",
+        "DAT"
+      ]
+    },
+    {
+      "vendor": "V020",
+      "name": "Vendor 020",
+      "tier": 1,
+      "claimed_score": 100.0,
+      "verified_score": 100.0,
+      "answered_weight_pct": 100.0,
+      "rating": "low",
+      "domains": {
+        "GOV": 100.0,
+        "ACC": 100.0,
+        "DAT": 100.0,
+        "INC": 100.0,
+        "BCP": 100.0,
+        "VUL": 100.0,
+        "SDL": 100.0,
+        "SUB": 100.0
+      },
+      "weakest_domains": [
+        "ACC",
+        "BCP",
+        "DAT"
+      ]
+    },
+    {
+      "vendor": "V021",
+      "name": "Vendor 021",
+      "tier": 2,
+      "claimed_score": 100.0,
+      "verified_score": 100.0,
+      "answered_weight_pct": 100.0,
+      "rating": "low",
+      "domains": {
+        "GOV": 100.0,
+        "ACC": 100.0,
+        "DAT": 100.0,
+        "INC": 100.0,
+        "BCP": 100.0,
+        "VUL": 100.0,
+        "SDL": 100.0,
+        "SUB": 100.0
+      },
+      "weakest_domains": [
+        "ACC",
+        "BCP",
+        "DAT"
+      ]
+    },
+    {
+      "vendor": "V022",
+      "name": "Vendor 022",
+      "tier": 3,
+      "claimed_score": 100.0,
+      "verified_score": 100.0,
+      "answered_weight_pct": 100.0,
+      "rating": "low",
+      "domains": {
+        "GOV": 100.0,
+        "ACC": 100.0,
+        "DAT": 100.0,
+        "INC": 100.0,
+        "BCP": 100.0,
+        "VUL": 100.0,
+        "SDL": 100.0,
+        "SUB": 100.0
+      },
+      "weakest_domains": [
+        "ACC",
+        "BCP",
+        "DAT"
+      ]
+    },
+    {
+      "vendor": "V023",
+      "name": "Vendor 023",
+      "tier": 4,
+      "claimed_score": 100.0,
+      "verified_score": 100.0,
+      "answered_weight_pct": 100.0,
+      "rating": "low",
+      "domains": {
+        "GOV": 100.0,
+        "ACC": 100.0,
+        "DAT": 100.0,
+        "INC": 100.0,
+        "BCP": 100.0,
+        "VUL": 100.0,
+        "SDL": 100.0,
+        "SUB": 100.0
+      },
+      "weakest_domains": [
+        "ACC",
+        "BCP",
+        "DAT"
+      ]
+    },
+    {
+      "vendor": "V024",
+      "name": "Vendor 024",
+      "tier": 1,
+      "claimed_score": 100.0,
+      "verified_score": 100.0,
+      "answered_weight_pct": 100.0,
+      "rating": "low",
+      "domains": {
+        "GOV": 100.0,
+        "ACC": 100.0,
+        "DAT": 100.0,
+        "INC": 100.0,
+        "BCP": 100.0,
+        "VUL": 100.0,
+        "SDL": 100.0,
+        "SUB": 100.0
+      },
+      "weakest_domains": [
+        "ACC",
+        "BCP",
+        "DAT"
+      ]
+    },
+    {
+      "vendor": "V025",
+      "name": "Vendor 025",
+      "tier": 2,
+      "claimed_score": 100.0,
+      "verified_score": 100.0,
+      "answered_weight_pct": 100.0,
+      "rating": "low",
+      "domains": {
+        "GOV": 100.0,
+        "ACC": 100.0,
+        "DAT": 100.0,
+        "INC": 100.0,
+        "BCP": 100.0,
+        "VUL": 100.0,
+        "SDL": 100.0,
+        "SUB": 100.0
+      },
+      "weakest_domains": [
+        "ACC",
+        "BCP",
+        "DAT"
+      ]
+    },
+    {
+      "vendor": "V026",
+      "name": "Vendor 026",
+      "tier": 3,
+      "claimed_score": 100.0,
+      "verified_score": 100.0,
+      "answered_weight_pct": 100.0,
+      "rating": "low",
+      "domains": {
+        "GOV": 100.0,
+        "ACC": 100.0,
+        "DAT": 100.0,
+        "INC": 100.0,
+        "BCP": 100.0,
+        "VUL": 100.0,
+        "SDL": 100.0,
+        "SUB": 100.0
+      },
+      "weakest_domains": [
+        "ACC",
+        "BCP",
+        "DAT"
+      ]
+    },
+    {
+      "vendor": "V027",
+      "name": "Vendor 027",
+      "tier": 4,
+      "claimed_score": 100.0,
+      "verified_score": 100.0,
+      "answered_weight_pct": 100.0,
+      "rating": "low",
+      "domains": {
+        "GOV": 100.0,
+        "ACC": 100.0,
+        "DAT": 100.0,
+        "INC": 100.0,
+        "BCP": 100.0,
+        "VUL": 100.0,
+        "SDL": 100.0,
+        "SUB": 100.0
+      },
+      "weakest_domains": [
+        "ACC",
+        "BCP",
+        "DAT"
+      ]
+    },
+    {
+      "vendor": "V028",
+      "name": "Vendor 028",
+      "tier": 1,
+      "claimed_score": 100.0,
+      "verified_score": 100.0,
+      "answered_weight_pct": 100.0,
+      "rating": "low",
+      "domains": {
+        "GOV": 100.0,
+        "ACC": 100.0,
+        "DAT": 100.0,
+        "INC": 100.0,
+        "BCP": 100.0,
+        "VUL": 100.0,
+        "SDL": 100.0,
+        "SUB": 100.0
+      },
+      "weakest_domains": [
+        "ACC",
+        "BCP",
+        "DAT"
+      ]
+    },
+    {
+      "vendor": "V029",
+      "name": "Vendor 029",
+      "tier": 2,
+      "claimed_score": 100.0,
+      "verified_score": 100.0,
+      "answered_weight_pct": 100.0,
+      "rating": "low",
+      "domains": {
+        "GOV": 100.0,
+        "ACC": 100.0,
+        "DAT": 100.0,
+        "INC": 100.0,
+        "BCP": 100.0,
+        "VUL": 100.0,
+        "SDL": 100.0,
+        "SUB": 100.0
+      },
+      "weakest_domains": [
+        "ACC",
+        "BCP",
+        "DAT"
+      ]
+    },
+    {
+      "vendor": "V030",
+      "name": "Vendor 030",
+      "tier": 3,
+      "claimed_score": 100.0,
+      "verified_score": 100.0,
+      "answered_weight_pct": 100.0,
+      "rating": "low",
+      "domains": {
+        "GOV": 100.0,
+        "ACC": 100.0,
+        "DAT": 100.0,
+        "INC": 100.0,
+        "BCP": 100.0,
+        "VUL": 100.0,
+        "SDL": 100.0,
+        "SUB": 100.0
+      },
+      "weakest_domains": [
+        "ACC",
+        "BCP",
+        "DAT"
+      ]
+    }
+  ],
+  "domains": {
+    "GOV": "Governance",
+    "ACC": "Access control",
+    "DAT": "Data protection",
+    "INC": "Incident response",
+    "BCP": "Resilience",
+    "VUL": "Vulnerability management",
+    "SDL": "Secure development",
+    "SUB": "Fourth parties"
+  }
+}

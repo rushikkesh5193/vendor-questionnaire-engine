@@ -1,0 +1,15 @@
+severity,vendor,name,check,detail,question
+high,V001,Vendor 001,CRITICAL_CONTROL_MISSING,ACC-3 answered no: Is multi-factor authentication enforced for all privileged and administrator accounts?,What is your plan and date to implement ACC-3?
+high,V001,Vendor 001,INCONSISTENT_ANSWERS,ACC-1 yes but ACC-3 no: claims MFA for all remote access but no MFA for privileged accounts.,Your answers to ACC-1 and ACC-3 conflict. Please clarify.
+high,V002,Vendor 002,UNSUPPORTED_YES,GOV-2 answered yes but no iso27001_cert is on file.,You answered yes to GOV-2 (Are you certified to ISO/IEC 27001 with a current certificate that covers the service we use?) Please provide the supporting evidence (iso27001_cert).
+high,V004,Vendor 004,CRITICAL_CONTROL_MISSING,ACC-3 answered no: Is multi-factor authentication enforced for all privileged and administrator accounts?,What is your plan and date to implement ACC-3?
+high,V004,Vendor 004,CRITICAL_CONTROL_MISSING,DAT-1 answered no: Is our data encrypted at rest?,What is your plan and date to implement DAT-1?
+high,V004,Vendor 004,CRITICAL_CONTROL_MISSING,INC-1 answered no: Do you have a documented incident response plan?,What is your plan and date to implement INC-1?
+high,V004,Vendor 004,RATING_HIGH,Verified score 16.9 is below 60.,Request a remediation plan before proceeding.
+high,V005,Vendor 005,INCONSISTENT_ANSWERS,SUB-2 yes but SUB-1 no: claims to flow down obligations to third parties but keeps no list of them.,Your answers to SUB-2 and SUB-1 conflict. Please clarify.
+high,V005,Vendor 005,INCONSISTENT_ANSWERS,SUB-3 yes but SUB-1 no: claims to assess third parties but keeps no list of them.,Your answers to SUB-3 and SUB-1 conflict. Please clarify.
+high,V007,Vendor 007,INCONSISTENT_ANSWERS,BCP-2 yes but BCP-1 no: claims DR is tested but says no DR plan exists.,Your answers to BCP-2 and BCP-1 conflict. Please clarify.
+high,V008,Vendor 008,CRITICAL_CONTROL_MISSING,DAT-1 answered no: Is our data encrypted at rest?,What is your plan and date to implement DAT-1?
+high,V008,Vendor 008,INCONSISTENT_ANSWERS,DAT-3 yes but DAT-1 no: claims managed encryption keys but says data is not encrypted at rest.,Your answers to DAT-3 and DAT-1 conflict. Please clarify.
+medium,V003,Vendor 003,INCOMPLETE,Only 50.0% of the questionnaire weight is answered (minimum 80%).,Please complete the unanswered questions.
+medium,V006,Vendor 006,UNSUPPORTED_YES,VUL-3 answered yes but no pentest_report is on file.,You answered yes to VUL-3 (Is an independent penetration test performed at least annually?) Please provide the supporting evidence (pentest_report).
